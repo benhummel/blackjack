@@ -103,16 +103,6 @@ def calculate_hand_value(hand):
 
 	return current_hand_value
 
-	# for in hand:
-	# 	current_hand_value = current_hand_value + get_card_value(i)
-	# 	if i[0] not in face_cards:  # if it's a number
-	# 		this_card = int(i[:len(i)-1])
-	# 	elif i[0] in face_cards[0:3]:  # if it's a face card
-	# 		this_card = 10
-	# 	else: # it's an ace
-	# 		this_card = 11  # start by assuming it's max
-	# 	current_hand_value = current_hand_value + this_card
-
 def check_for_blackjack(hand): 
 	if calculate_hand_value(hand) == 21:
 		return True
